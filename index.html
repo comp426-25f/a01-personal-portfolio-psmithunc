@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Paul Smith III's Portfolio -->
+<!--I took inspiration from various sources to create this portfolio layout, including:
+    https://briceclain.com/en/
+    https://www.pinterest.com/pin/build-your-data-portfolio-everything-you-need-to-create-high-quality-data-projects-and-showcase-them-on--12103492740808812/
+    -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Description for website-->
+    <meta name="description" content="Personal site for Paul Smith III — UNC Computer Science student." />
+    <title>Paul Smith III — Portfolio</title>
+    <!--Connect to CSS file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header w/ picture & info-->
+    <header class="site-header">
+      <div class="header-inner">
+        <img src="profile.jpg" alt="Profile photo of Paul Smith III" class="picOfMe" />
+        <div class="intro">
+          <h1>Paul Smith III</h1>
+          <p class="tagline">UNC–Chapel Hill • Computer Science • Builder, Speaker, and Lifelong Learner</p>
+          <p class="short-bio">
+            I'm a CS student focused on practical software engineering, AI/ML, and tech ethics.  I love
+            serving others, teaching/mentoring, and bridging tech with the humanities.
+          </p>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/psmithunc" target="_blank"><img src="github.png" alt="GitHub" class="social-logo" style="width:70px;height:42px;"></a>
+          <a href="https://www.linkedin.com/in/psiii/" target="_blank"><img src="linkedin.jpeg" alt="LinkedIn" class="social-logo" style="width:70px;height:70px;"></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about" class="card">
+        <h2>About</h2>
+        <!--Short about section giving more info about myself-->
+        <p>
+          I'm a senior majoring in <strong>Computer Science</strong> and minoring in <strong>African & African American Diaspora Studies 
+          (AAAD)</strong> at <strong>UNC–Chapel Hill</strong>.  My academic interests include software engineering, human-centered AI, and the study of African American culture.  Beyond class,
+          I enjoy public speaking, networking, assisting in my family's business, and enjoying various forms of music.  My recent projects include
+          an Akari Game project, this personal website, and an AI chatbot utilizing ML/RAG for my family's business!
+        </p>
+        <p>
+          I'm currently exploring systems design, networking, and cloud (AWS). When I'm not coding,
+          you'll find me reading about algorithmic accountability, refining talks for student outreach, or
+          serving in my local church community!
+        </p>
+      </section>
+
+      <!--Classes-->
+      <section id="classes" class="card">
+        <h2>Classes</h2>
+        <ul class="pill-list">
+          <li>COMP 301 — Foundations of Programming</li>
+          <li>COMP 283 — Discrete Structures</li>
+          <li>COMP 426 — Modern Web Programming</li>
+          <li>COMP 380 — Technology, Ethics & Culture</li>
+          <li>COMP 590 — Special Topics (AI/DS)</li>
+          <li>AAAD 288 — Black Cultural Studies</li>
+          <li>COMM 113 — Public Speaking</li>
+          <li>SPAN (various) — Grammar, Conversation, Culture</li>
+        </ul>
+      </section>
+
+      <!--Skills-->
+      <section id="skills" class="card">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML, CSS, & TypeScript</li>
+              <li>C / C++</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Frameworks & Libraries</h3>
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Android (Kotlin/Java)</li>
+              <li>Express</li>
+              <li>Pandas / NumPy</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools & Platforms</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Linux</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Paul Smith III</p>
+    </footer>
+    
+    <!--Set the current year in the footer-->
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
